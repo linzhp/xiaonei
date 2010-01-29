@@ -1,0 +1,23 @@
+development:
+  api_key: [API Key]
+  secret_key: [Secret]
+  canvas_page_name: [Canvas]
+  callback_url: [Callback URL]
+  tunnel:
+    public_host_username: 
+    public_host: 
+    public_port: 4007
+    local_port: 3000
+  sync:
+    # 填写需要同步的字段
+    columns:
+      - xn_id:  uid   #本地字段在前，校内的字段在后，如果相同，只需要填写一个
+      - sex
+      - name
+      - star
+      - headurl
+      - zidou
+    # 填写同步的时间间隔，单位为秒
+    # 一般只有当用户访问的时候才会被同步
+    interval: 1
+
